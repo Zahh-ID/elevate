@@ -16,7 +16,7 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const baseUrl = "https://zahh-id.github.io/elevate";
+const baseUrl = "https://elevate.syzzhd.web.id";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -51,13 +51,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/elevate/favicon/favicon.ico", sizes: "any" },
-      { url: "/elevate/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/elevate/favicon/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon/favicon.ico", sizes: "any" },
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
     ],
-    apple: "/elevate/favicon/apple-touch-icon.png",
+    apple: "/favicon/apple-touch-icon.png",
   },
-  manifest: "/elevate/favicon/site.webmanifest",
+  manifest: "/favicon/site.webmanifest",
   robots: {
     index: true,
     follow: true,

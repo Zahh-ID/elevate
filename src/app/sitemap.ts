@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://zahh-id.github.io/elevate',
+      url: 'https://elevate.syzzhd.web.id',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,

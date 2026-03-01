@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://zahh-id.github.io/elevate/sitemap.xml',
+    sitemap: 'https://elevate.syzzhd.web.id/sitemap.xml',
   }
 }
