@@ -31,39 +31,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/package-lock.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          # Automatically inject basePath in your Next.js config file and disable
-          # server side image optimization (this is handled by next.config.ts)
-          static_site_generator: next
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --legacy-peer-deps
+        run: npm ci --legacy-peer-deps
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build
-      - name: List files (Debug)
-        run: ls -R
+        run: npm run build
+      - name: Diagnostics (Find Export)
+        run: |
+          echo "Checking current directory structure..."
+          ls -F
+          echo "Searching for index.html..."
+          find . -name "index.html"
+          if [ -d "out" ]; then
+            echo "SUCCESS: 'out' directory found."
+          else
+            echo "ERROR: 'out' directory NOT found at root."
+            # Attempt to find where it went
+            POSSIBLE_OUT=$(find . -name "index.html" | head -n 1 | sed 's/\/index.html//')
+            if [ -n "$POSSIBLE_OUT" ]; then
+              echo "Found static export at: $POSSIBLE_OUT"
+              cp -r "$POSSIBLE_OUT/." ./out-fix
+              echo "Copied to ./out-fix"
+            fi
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          # Use the discovered path or fall back to out-fix if created
+          path: ${{ hashFiles('out-fix/index.html') != '' && './out-fix' || './out' }}
 
   # Deployment job
   deploy:
