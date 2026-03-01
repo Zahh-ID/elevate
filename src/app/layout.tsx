@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   keywords: ["Web3 Consulting", "Smart Contract Development", "DeFi Architecture", "Blockchain Engineering", "Elevate Web3", "Tokenomics Design"],
   authors: [{ name: "Elevate Team" }],
   creator: "Elevate",
+  alternates: {
+    canonical: baseUrl + "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
