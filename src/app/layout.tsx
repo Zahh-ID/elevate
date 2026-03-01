@@ -16,7 +16,7 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const baseUrl = "https://elevate.syzzhd.web.id";
+const baseUrl = "https://zahh-id.github.io/elevate";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -82,7 +82,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Elevate",
