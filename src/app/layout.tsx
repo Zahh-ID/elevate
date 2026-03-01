@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Elevate Team" }],
   creator: "Elevate",
   alternates: {
-    canonical: baseUrl + "/",
+    canonical: "/",
   },
   openGraph: {
     type: "website",
