@@ -9,7 +9,7 @@ import { SplitText } from "./SplitText";
 const LINKS = [
   { name: "Consulting", href: "#consulting" },
   { name: "Our Projects", href: "/projects" },
-  { name: "Our Team", href: "#team" },
+  { name: "Our Team", href: "/team" },
 ];
 
 const SOCIALS = [
