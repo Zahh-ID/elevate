@@ -11,7 +11,11 @@ const LINKS = [
   { name: "Our Team", href: "#team" },
 ];
 
-const SOCIALS = ["Twitter", "LinkedIn", "GitHub", "Discord"];
+const SOCIALS = [
+  { name: "Instagram", href: "https://instagram.com/elevate.devs" },
+  { name: "Twitter", href: "https://twitter.com/elevate.devs" },
+  { name: "TikTok", href: "https://tiktok.com/@elevate.devs" },
+];
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,8 +100,15 @@ export function Navigation() {
                   <h3 className="text-sm text-gray-400 mb-4 uppercase tracking-widest">Connect</h3>
                   <ul className="flex flex-col gap-2">
                     {SOCIALS.map((s) => (
-                      <motion.li key={s} className="hover:text-accent cursor-pointer transition-colors w-fit">
-                        {s}
+                      <motion.li key={s.name} className="w-fit">
+                        <a 
+                          href={s.href} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-accent cursor-pointer transition-colors"
+                        >
+                          {s.name}
+                        </a>
                       </motion.li>
                     ))}
                   </ul>

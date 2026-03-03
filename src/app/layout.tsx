@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Elevate | Premium Web3 Consulting & Engineering",
     description: "Architecting the future of decentralized finance. Smart contract engineering and DeFi development.",
     images: ["/og-image.png"],
-    creator: "@elevate_web3",
+    creator: "@elevate.devs",
   },
   icons: {
     icon: [
@@ -94,8 +94,9 @@ export default function RootLayout({
               "url": baseUrl,
               "logo": `${baseUrl}/favicon/apple-touch-icon.png`,
               "sameAs": [
-                "https://twitter.com/elevate_web3",
-                "https://github.com/elevate-web3"
+                "https://instagram.com/elevate.devs",
+                "https://twitter.com/elevate.devs",
+                "https://tiktok.com/@elevate.devs"
               ],
               "serviceType": ["Web3 Consulting", "Smart Contract Development", "DeFi Architecture"]
             })
