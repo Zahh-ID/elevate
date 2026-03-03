@@ -45,7 +45,7 @@ function AnimatedLogo({ isOpen }: { isOpen: boolean }) {
       initial="closed"
       animate={isOpen ? "open" : "closed"}
       variants={logoVariants}
-      className="relative w-full h-full"
+      className="relative w-10 h-10"
     >
       <motion.div variants={baseVariants} className="absolute inset-0">
         <svg viewBox="0 0 270 299" fill="none" className="w-full h-full">
@@ -117,22 +117,17 @@ export function Navigation() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10 mix-blend-difference text-white">
-        <div className="flex items-center gap-8">
-          <button
-            onClick={() => setIsOpen(true)}
-            className="flex items-center gap-4 group"
-            aria-label="Open Menu"
-          >
-            <div className="relative w-10 h-10 md:w-12 md:h-12">
-              <AnimatedLogo isOpen={isOpen} />
-            </div>
-            <span className="heading-text text-xl group-hover:text-accent transition-colors">MENU</span>
-          </button>
-          
-          <div className="hidden md:block heading-text text-2xl tracking-widest cursor-pointer hover:text-accent transition-colors" onClick={() => setIsOpen(true)}>
-            ELEVATE
-          </div>
+        <div className="heading-text text-2xl tracking-widest cursor-pointer hover:text-accent transition-colors">
+          ELEVATE
         </div>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="flex items-center gap-2 group"
+          aria-label="Open Menu"
+        >
+          <span className="heading-text text-xl group-hover:text-accent transition-colors">MENU</span>
+          <Menu className="w-6 h-6 group-hover:text-accent transition-colors" />
+        </button>
       </header>
 
       <AnimatePresence>

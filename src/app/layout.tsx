@@ -28,9 +28,6 @@ export const metadata: Metadata = {
   keywords: ["Web3 Consulting", "Smart Contract Development", "DeFi Architecture", "Blockchain Engineering", "Elevate Web3", "Tokenomics Design"],
   authors: [{ name: "Elevate Team" }],
   creator: "Elevate",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -50,7 +47,7 @@ export const metadata: Metadata = {
     title: "Elevate | Premium Web3 Consulting & Engineering",
     description: "Architecting the future of decentralized finance. Smart contract engineering and DeFi development.",
     images: ["/og-image.png"],
-    creator: "@elevatedevs",
+    creator: "@elevate_web3",
   },
   icons: {
     icon: [
@@ -94,9 +91,8 @@ export default function RootLayout({
               "url": baseUrl,
               "logo": `${baseUrl}/favicon/apple-touch-icon.png`,
               "sameAs": [
-                "https://instagram.com/elevate.devs",
-                "https://twitter.com/elevatedevs",
-                "https://tiktok.com/@elevate.devs"
+                "https://twitter.com/elevate_web3",
+                "https://github.com/elevate-web3"
               ],
               "serviceType": ["Web3 Consulting", "Smart Contract Development", "DeFi Architecture"]
             })
