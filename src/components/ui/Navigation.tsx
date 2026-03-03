@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { SplitText } from "./SplitText";
@@ -121,9 +122,9 @@ export function Navigation() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10 mix-blend-difference text-white">
-        <div className="heading-text text-2xl tracking-widest cursor-pointer hover:text-accent transition-colors">
+        <Link href="/" className="heading-text text-2xl tracking-widest cursor-pointer hover:text-accent transition-colors">
           ELEVATE
-        </div>
+        </Link>
         <button
           onClick={() => setIsOpen(true)}
           className="flex items-center gap-2 group"
@@ -146,9 +147,13 @@ export function Navigation() {
             <div className="flex justify-between items-center p-6 md:p-10">
               <div className="flex items-center gap-4">
                 <AnimatedLogo isOpen={isOpen} />
-                <div className="heading-text text-2xl tracking-widest text-accent">
+                <Link 
+                  href="/" 
+                  onClick={() => setIsOpen(false)}
+                  className="heading-text text-2xl tracking-widest text-accent hover:opacity-80 transition-opacity"
+                >
                   ELEVATE
-                </div>
+                </Link>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
@@ -198,7 +203,13 @@ export function Navigation() {
                 >
                 {LINKS.map((link) => (
                   <motion.div key={link.name} variants={linkItemVariants} className="py-2">
-                    <SplitText>{link.name}</SplitText>
+                    <Link 
+                      href={link.href} 
+                      onClick={() => setIsOpen(false)}
+                      className="block group/link"
+                    >
+                      <SplitText>{link.name}</SplitText>
+                    </Link>
                   </motion.div>
                 ))}
               </motion.nav>
