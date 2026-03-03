@@ -14,11 +14,11 @@ export function About() {
   const words = aboutText.split(" ");
 
   return (
-    <section ref={containerRef} className="py-32 px-6 md:px-20 max-w-7xl mx-auto border-t border-white/10" id="consulting">
+    <section ref={containerRef} className="py-32 px-6 md:px-20 max-w-7xl mx-auto border-t border-white/10" id="solutions">
       <div className="flex flex-col md:flex-row gap-16 items-start">
         <div className="w-full md:w-1/3">
-          <h3 className="heading-text text-2xl text-gray-500 mb-4 tracking-widest uppercase">The Studio</h3>
-          <p className="text-xl font-light text-gray-300">Technical development and strategic blockchain consulting.</p>
+          <h3 className="heading-text text-2xl text-gray-500 mb-4 tracking-widest uppercase">Solutions</h3>
+          <p className="text-xl font-light text-gray-300">Technical development and strategic blockchain engineering.</p>
         </div>
         <div className="w-full md:w-2/3">
           <p className="text-3xl md:text-5xl leading-tight font-light hidden md:flex md:flex-wrap md:items-center">

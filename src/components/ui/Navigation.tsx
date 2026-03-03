@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import { SplitText } from "./SplitText";
 
 const LINKS = [
-  { name: "Consulting", href: "#consulting" },
+  { name: "Solutions", href: "#solutions" },
   { name: "Our Projects", href: "/projects" },
   { name: "Our Team", href: "/team" },
 ];

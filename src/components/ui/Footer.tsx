@@ -33,7 +33,7 @@ export function Footer() {
       </div>
 
       <div className="absolute bottom-8 left-0 right-0 px-6 md:px-20 flex justify-between items-center text-xs text-gray-500 uppercase tracking-widest">
-        <span>© {new Date().getFullYear()} ELEVATE Web3 Consulting</span>
+        <span>© {new Date().getFullYear()} ELEVATE Web3 Solutions</span>
         <div className="flex gap-6">
           <a href="#" className="hover:text-accent transition-colors">Twitter</a>
           <a href="#" className="hover:text-accent transition-colors">GitHub</a>
