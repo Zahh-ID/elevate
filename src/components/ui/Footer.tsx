@@ -36,7 +36,7 @@ export function Footer() {
         <span>© {new Date().getFullYear()} ELEVATE Web3 Consulting</span>
         <div className="flex gap-6">
           <a href="https://instagram.com/elevate.devs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Instagram</a>
-          <a href="https://twitter.com/elevate.devs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Twitter</a>
+          <a href="https://twitter.com/elevatedevs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Twitter</a>
           <a href="https://tiktok.com/@elevate.devs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">TikTok</a>
         </div>
       </div>

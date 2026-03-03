@@ -13,7 +13,7 @@ const LINKS = [
 
 const SOCIALS = [
   { name: "Instagram", href: "https://instagram.com/elevate.devs" },
-  { name: "Twitter", href: "https://twitter.com/elevate.devs" },
+  { name: "Twitter", href: "https://twitter.com/elevatedevs" },
   { name: "TikTok", href: "https://tiktok.com/@elevate.devs" },
 ];
 
