@@ -8,12 +8,21 @@ export function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Check if user has already seen preloader in this session
+    const hasSeenPreloader = sessionStorage.getItem("hasSeenPreloader");
+    
+    if (hasSeenPreloader) {
+      setIsLoading(false);
+      return;
+    }
+
     // Fake loading progress for dramatic effect (since it's a static/CSR demo)
     const interval = setInterval(() => {
       setProgress((prev) => {
         const next = prev + Math.floor(Math.random() * 15);
         if (next >= 100) {
           clearInterval(interval);
+          sessionStorage.setItem("hasSeenPreloader", "true");
           setTimeout(() => setIsLoading(false), 500); // Wait half a second at 100%
           return 100;
         }
