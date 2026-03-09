@@ -10,7 +10,7 @@ export function About() {
     offset: ["start 80%", "end center"]
   });
 
-  const aboutText = "We are a Web3 infrastructure and consulting studio focused on building scalable blockchain applications, DeFi protocols, and cross-chain integrations.";
+  const aboutText = "We are a multidisciplinary creative studio delivering strategy, design, and technology solutions that elevate brands and digital experiences.";
   const words = aboutText.split(" ");
 
   return (
@@ -18,7 +18,7 @@ export function About() {
       <div className="flex flex-col md:flex-row gap-16 items-start">
         <div className="w-full md:w-1/3">
           <h3 className="heading-text text-2xl text-gray-500 mb-4 tracking-widest uppercase">Solutions</h3>
-          <p className="text-xl font-light text-gray-300">Technical development and strategic blockchain engineering.</p>
+          <p className="text-xl font-light text-gray-300">Creative direction and strategic digital solutions.</p>
         </div>
         <div className="w-full md:w-2/3">
           <p className="text-3xl md:text-5xl leading-tight font-light hidden md:flex md:flex-wrap md:items-center">

@@ -219,7 +219,7 @@ export function Navigation() {
                 <h3 className="text-sm text-gray-400 mb-6 uppercase tracking-widest">Latest News</h3>
                 <div className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-accent/50 transition-colors cursor-pointer group">
                   <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Announcement</span>
-                  <h4 className="text-lg leading-tight mb-4 text-gray-200 group-hover:text-white transition-colors">Elevate launches highly anticipated DeFi margin protocol.</h4>
+                  <h4 className="text-lg leading-tight mb-4 text-gray-200 group-hover:text-white transition-colors">Elevate unveils new creative direction for 2026.</h4>
                   <p className="text-sm text-gray-500">Read the full story →</p>
                 </div>
               </div>

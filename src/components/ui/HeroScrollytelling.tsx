@@ -51,10 +51,10 @@ export function HeroScrollytelling() {
           className="absolute z-50 flex flex-col items-center text-center px-4 w-full"
         >
           <h1 className="heading-text text-5xl md:text-7xl lg:text-8xl tracking-tight leading-none mb-4 text-white">
-            ELEVATE <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40">Build Your Web3 Vision</span>
+            ELEVATE <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40">Your Digital Vision</span>
           </h1>
           <p className="font-light text-white/50 text-base md:text-xl lg:text-2xl max-w-2xl leading-relaxed">
-            Smart contracts, dApps, token systems, and beyond.
+            Strategy, creative direction, design, and technology.
           </p>
         </motion.div>
 
@@ -63,10 +63,10 @@ export function HeroScrollytelling() {
           className="absolute z-50 left-6 md:left-12 lg:left-[5%] text-left max-w-[240px] md:max-w-[300px] lg:max-w-[340px] pointer-events-none drop-shadow-md"
         >
           <h2 className="heading-text text-4xl md:text-6xl text-white/90">
-            Designing Web3<br />Infrastructure
+            Crafting Digital<br />Experiences
           </h2>
           <p className="mt-2 md:mt-4 font-light text-white/50 text-base md:text-lg leading-relaxed">
-            Protocol architecture, liquidity systems, and cross-chain integrations.
+            Art direction, UX/UI design, illustration, and visual identity.
           </p>
         </motion.div>
 
@@ -75,10 +75,10 @@ export function HeroScrollytelling() {
           className="absolute z-50 right-6 md:right-12 lg:right-[5%] text-right max-w-[240px] md:max-w-[300px] lg:max-w-[340px] pointer-events-none drop-shadow-md"
         >
           <h2 className="heading-text text-4xl md:text-6xl text-white/90">
-            Strategic Consulting
+            Strategic Solutions
           </h2>
           <p className="mt-2 md:mt-4 font-light text-white/50 text-base md:text-lg leading-relaxed">
-            Delivering technical development and strategic consulting across interconnected ecosystems.
+            Technology strategy, research, and full-stack development for scalable products.
           </p>
         </motion.div>
 

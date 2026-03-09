@@ -4,7 +4,6 @@ import { HeroScrollytelling } from "@/components/ui/HeroScrollytelling";
 import { About } from "@/components/sections/About";
 import { Ecosystem } from "@/components/sections/Ecosystem";
 import { Capabilities } from "@/components/sections/Capabilities";
-import { Principles } from "@/components/sections/Principles";
 import { Footer } from "@/components/ui/Footer";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
           <About />
           <Ecosystem />
           <Capabilities />
-          <Principles />
         </div>
 
         {/* The Footer */}

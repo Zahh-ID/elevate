@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -33,11 +34,12 @@ export function Footer() {
       </div>
 
       <div className="absolute bottom-8 left-0 right-0 px-6 md:px-20 flex justify-between items-center text-xs text-gray-500 uppercase tracking-widest">
-        <span>© {new Date().getFullYear()} ELEVATE Web3 Solutions</span>
+        <span>© {new Date().getFullYear()} ELEVATE Studio</span>
         <div className="flex gap-6">
-          <a href="#" className="hover:text-accent transition-colors">Twitter</a>
-          <a href="#" className="hover:text-accent transition-colors">GitHub</a>
-          <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>
+          <Link href="/brand" className="hover:text-accent transition-colors">Brand</Link>
+          <a href="https://instagram.com/elevate.devs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Instagram</a>
+          <a href="https://twitter.com/elevatedevs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Twitter</a>
+          <a href="https://tiktok.com/@elevate.devs" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">TikTok</a>
         </div>
       </div>
     </footer>

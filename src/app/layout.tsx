@@ -21,33 +21,33 @@ const baseUrl = "https://elevate.syzzhd.web.id";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Elevate | Premium Web3 Consulting & Engineering",
+    default: "Elevate | Creative Studio & Digital Solutions",
     template: "%s | Elevate"
   },
-  description: "Architecting the future of decentralized finance. Premium Web3 consulting, smart contract engineering, and dApp development for elite protocols.",
-  keywords: ["Web3 Consulting", "Smart Contract Development", "DeFi Architecture", "Blockchain Engineering", "Elevate Web3", "Tokenomics Design"],
+  description: "A multidisciplinary studio delivering strategy, creative direction, and technology solutions for ambitious brands.",
+  keywords: ["Creative Studio", "Digital Strategy", "Web Development", "UX/UI Design", "Art Direction", "Brand Strategy"],
   authors: [{ name: "Elevate Team" }],
   creator: "Elevate",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: baseUrl,
-    title: "Elevate | Premium Web3 Consulting & Engineering",
-    description: "Architecting the future of decentralized finance. Premium Web3 consulting, smart contract engineering, and dApp development.",
+    title: "Elevate | Creative Studio & Digital Solutions",
+    description: "A multidisciplinary studio delivering strategy, creative direction, and technology solutions for ambitious brands.",
     siteName: "Elevate",
     images: [{
       url: "/og-image.png",
       width: 1200,
       height: 630,
-      alt: "Elevate Premium Web3 Consulting",
+      alt: "Elevate Creative Studio",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elevate | Premium Web3 Consulting & Engineering",
-    description: "Architecting the future of decentralized finance. Smart contract engineering and DeFi development.",
+    title: "Elevate | Creative Studio & Digital Solutions",
+    description: "Strategy, creative direction, and technology solutions for ambitious brands.",
     images: ["/og-image.png"],
-    creator: "@elevate_web3",
+    creator: "@elevatedevs",
   },
   icons: {
     icon: [
@@ -87,14 +87,14 @@ export default function RootLayout({
               "@type": "ProfessionalService",
               "name": "Elevate",
               "image": `${baseUrl}/og-image.png`,
-              "description": "Premium Web3 consulting and smart contract engineering studio.",
+              "description": "A multidisciplinary creative studio delivering strategy, design, and technology solutions.",
               "url": baseUrl,
               "logo": `${baseUrl}/favicon/apple-touch-icon.png`,
               "sameAs": [
-                "https://twitter.com/elevate_web3",
-                "https://github.com/elevate-web3"
+                "https://twitter.com/elevatedevs",
+                "https://github.com/elevatedevs"
               ],
-              "serviceType": ["Web3 Consulting", "Smart Contract Development", "DeFi Architecture"]
+              "serviceType": ["Creative Direction", "UX/UI Design", "Web Development", "Technology Strategy"]
             })
           }}
         />
