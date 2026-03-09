@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChainPattern } from "@/components/ui/ChainPattern";
 import { itemVariants } from "@/lib/animations";
@@ -23,13 +22,11 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
 
             {/* Member illustration */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                     src={member.image}
                     alt={member.name}
-                    width={400}
-                    height={400}
                     className="w-full h-full object-contain opacity-90"
-                    priority
                 />
             </div>
 
