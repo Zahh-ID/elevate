@@ -25,27 +25,31 @@ export const metadata: Metadata = {
     template: "%s | Elevate"
   },
   description: "A multidisciplinary studio delivering strategy, creative direction, and technology solutions for ambitious brands.",
-  keywords: ["Creative Studio", "Digital Strategy", "Web Development", "UX/UI Design", "Art Direction", "Brand Strategy"],
-  authors: [{ name: "Elevate Team" }],
-  creator: "Elevate",
+  keywords: [
+    "Elevate", "Elevate Web3", "Web3 Infrastructure", "Blockchain Solutions", "Smart Contract Architecture", 
+    "Cosmos Ecosystem", "Solana Development", "EVM Development", "DeFi Protocol Design", "Liquidity Systems",
+    "Cross-Chain Integration", "Blockchain Data Infrastructure", "Web3 Consulting", "Crypto Engineering",
+    "Creative Studio", "Digital Strategy", "Brand Strategy", "Indonesia Web3", "Syzzhd", "Elevate Indonesia", "Elevate indo", "Elevate Your Bussiness", "Elevate Build", "Elevate Your Bussiness", "Elevate your idea"  ],
+  authors: [{ name: "Elevate Team", url: "https://elevate.syzzhd.web.id" }],
+  creator: "Elevate Web3 Solutions",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: baseUrl,
-    title: "Elevate | Creative Studio & Digital Solutions",
-    description: "A multidisciplinary studio delivering strategy, creative direction, and technology solutions for ambitious brands.",
-    siteName: "Elevate",
+    title: "Elevate | Premium Web3 Infrastructure & Solutions",
+    description: "A specialized Web3 studio delivering research-driven smart contract architecture, cross-chain infrastructure, and DeFi mechanics for ambitious protocols.",
+    siteName: "Elevate Web3 Solutions",
     images: [{
       url: "/og-image.png",
       width: 1200,
       height: 630,
-      alt: "Elevate Creative Studio",
+      alt: "Elevate Web3 Protocol Engineering",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elevate | Creative Studio & Digital Solutions",
-    description: "Strategy, creative direction, and technology solutions for ambitious brands.",
+    title: "Elevate | Premium Web3 Infrastructure",
+    description: "Smart contract architecture, cross-chain infrastructure, and DeFi solutions.",
     images: ["/og-image.png"],
     creator: "@elevatedevs",
   },
@@ -85,16 +89,18 @@ export default function RootLayout({
              __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Elevate",
+              "name": "Elevate Web3 Solutions",
               "image": `${baseUrl}/og-image.png`,
-              "description": "A multidisciplinary creative studio delivering strategy, design, and technology solutions.",
+              "description": "Specialized Web3 engineering studio focused on protocol design, DEX mechanics, and cross-chain infrastructure.",
               "url": baseUrl,
               "logo": `${baseUrl}/favicon/apple-touch-icon.png`,
               "sameAs": [
                 "https://twitter.com/elevatedevs",
-                "https://github.com/elevatedevs"
+                "https://github.com/elevatedevs",
+                "https://instagram.com/elevate.devs",
+                "https://tiktok.com/@elevate.devs"
               ],
-              "serviceType": ["Creative Direction", "UX/UI Design", "Web Development", "Technology Strategy"]
+              "serviceType": ["Smart Contract Development", "Blockchain Infrastructure", "DeFi Consulting", "Protocol Architecture"]
             })
           }}
         />
