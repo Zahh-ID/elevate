@@ -26,10 +26,48 @@ export const metadata: Metadata = {
   },
   description: "A multidisciplinary studio delivering strategy, creative direction, and technology solutions for ambitious brands.",
   keywords: [
-    "Elevate", "Elevate Web3", "Web3 Infrastructure", "Blockchain Solutions", "Smart Contract Architecture", 
-    "Cosmos Ecosystem", "Solana Development", "EVM Development", "DeFi Protocol Design", "Liquidity Systems",
-    "Cross-Chain Integration", "Blockchain Data Infrastructure", "Web3 Consulting", "Crypto Engineering",
-    "Creative Studio", "Digital Strategy", "Brand Strategy", "Indonesia Web3", "Syzzhd", "Elevate Indonesia", "Elevate indo", "Elevate Your Bussiness", "Elevate Build", "Elevate Your Bussiness", "Elevate your idea"  ],
+    // Brand Core
+    "Elevate", "Elevate Studio", "Elevate Digital", "Elevate Agency", "Elevate Web3", "Elevate Devs",
+    "Elevate Indonesia", "Elevate Indo", "Elevate Your Business", "Elevate Your Idea", "Elevate Build",
+    // Strategy
+    "Elevate Creative Direction", "Elevate Technology Strategy", "Elevate Digital Strategy",
+    "Elevate Content Strategy", "Elevate Brand Strategy", "Elevate Growth Strategy",
+    "Elevate Product Strategy", "Elevate Digital Transformation", "Elevate Business Consulting",
+    "Elevate Market Research", "Elevate Innovation Consulting", "Elevate Startup Advisory",
+    "Elevate Technical Consulting", "Elevate Go-To-Market Strategy",
+    // Creative & Design
+    "Elevate Art Direction", "Elevate UX Design", "Elevate UI Design", "Elevate UX/UI Design",
+    "Elevate Brand Identity", "Elevate Logo Design", "Elevate Visual Identity",
+    "Elevate Graphic Design", "Elevate Illustration", "Elevate Motion Design",
+    "Elevate Motion Graphics", "Elevate Animation Studio", "Elevate Micro-Interactions",
+    "Elevate Interactive Design", "Elevate Design System", "Elevate Typography Design",
+    "Elevate Social Media Design", "Elevate Web Design", "Elevate Landing Page Design",
+    "Elevate Dashboard Design", "Elevate App Design",
+    // Web & App Development
+    "Elevate Web Development", "Elevate Frontend Development", "Elevate Backend Development",
+    "Elevate Full Stack Development", "Elevate Mobile Development", "Elevate iOS Development",
+    "Elevate Android Development", "Elevate React Development", "Elevate Next.js Development",
+    "Elevate Progressive Web App", "Elevate E-Commerce Development", "Elevate Custom Website",
+    "Elevate Responsive Web Design", "Elevate API Development", "Elevate SaaS Development",
+    "Elevate CMS Development", "Elevate Performance Optimization", "Elevate SEO Optimization",
+    // Cloud & Infrastructure
+    "Elevate Cloud Infrastructure", "Elevate DevOps", "Elevate CI/CD Pipeline",
+    "Elevate Server Management", "Elevate Scalable Infrastructure", "Elevate Microservices",
+    "Elevate System Architecture", "Elevate Cloud Migration", "Elevate Database Design",
+    // Blockchain & Web3
+    "Elevate Blockchain Development", "Elevate Smart Contract Development", "Elevate Web3 Solutions",
+    "Elevate DeFi Protocol", "Elevate dApp Development", "Elevate Cosmos Ecosystem",
+    "Elevate Solana Development", "Elevate EVM Development", "Elevate Cross-Chain Integration",
+    "Elevate Token Development", "Elevate NFT Development", "Elevate Crypto Engineering",
+    "Elevate Web3 Consulting", "Elevate DeFi Consulting", "Elevate Decentralized Application",
+    // Generic (catch non-branded searches too)
+    "Digital Agency", "Digital Agency Indonesia", "Creative Studio", "Design Studio",
+    "Web3 Infrastructure", "Blockchain Solutions", "Smart Contract Architecture",
+    "DeFi Protocol Design", "Web Development Agency", "Mobile App Agency",
+    "Full Service Agency", "Premium Digital Agency", "Tech Studio", "Syzzhd",
+    "Creative Agency", "Design Agency Indonesia", "Web Development Indonesia",
+    "Brand Identity Agency", "UX/UI Agency", "Motion Design Studio",
+  ],
   authors: [{ name: "Elevate Team", url: "https://elevate.syzzhd.web.id" }],
   creator: "Elevate Web3 Solutions",
   openGraph: {
